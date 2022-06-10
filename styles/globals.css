@@ -6,6 +6,10 @@
 	.nav-btn {
 		@apply font-panther mx-2 bg-accent mt-2 text-dark;
 	}
+
+	.icon {
+		@apply mx-4;
+	}
 }
 
 @font-face {
