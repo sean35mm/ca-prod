@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.nav-btn {
+		@apply font-panther mx-2 bg-accent mt-2 text-dark;
+	}
+}
+
 @font-face {
 	font-family: 'Nord';
 	src: url('./fonts/ABCGintoNordVariable-Trial.ttf');

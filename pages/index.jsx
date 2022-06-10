@@ -1,15 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import Layout from '../src/components/ui/Layout'
-
 
 export default function Home() {
   return (
-    <Layout>
+    <div>
       <div>
-        <h1 className='font-panther'>Hello World!</h1>
+        <h1 className='font-panther text-2xl m-4'>Hello World!</h1>
       </div>
-    </Layout>
+    </div>
   )
 }
