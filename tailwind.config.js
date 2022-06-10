@@ -7,11 +7,11 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#0F7EBC',
-				secondary: '#51C1FF',
-				dark: '#0D679A',
-				accent: '#FFFF3B',
-				logo: '#FFF5D2',
+				primary: '#2098DB',
+				secondary: '#79CEFD',
+				dark: '#00517D',
+				yellow: '#FFFF3B',
+				beige: '#FFF5D2',
 			},
 			fontFamily: {
 				nord: ['Nord'],
@@ -24,7 +24,7 @@ module.exports = {
 			},
 		},
 		screens: {
-			mobile: '320px',
+			mobile: '375px',
 
 			tablet: '768px',
 			// => @media (min-width: 640px) { ... }

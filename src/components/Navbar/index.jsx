@@ -1,48 +1,34 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 //Icons
-import { FiArrowUpRight } from 'react-icons/fi';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 //Assets
 import logo from '../../assets/CA-Logo.png';
 
 const Navbar = () => {
 	return (
-		<div className='flex-col bg-primary justify-center p-8'>
-			<div>
-				<Link href='/'>
-					<Image src={logo} alt='logo' width='241px' height='121px' />
-				</Link>
+		<div className='bg-primary flex justify-end w-screen p-6 items-center'>
+			<div className='mx-auto'>
+				<a href={'/'}>
+					<Image
+						src={logo}
+						alt='logo'
+						width={'203.7px'}
+						height={'102px'}
+						layout='intrinsic'
+					/>
+				</a>
 			</div>
-			<div>
-				<ul className='flex justify-center'>
-					<Link href='#'>
-						<li className='nav-btn'>
-							SHOP{' '}
-							<span className='ml-3'>
-								<FiArrowUpRight />
-							</span>
-						</li>
-					</Link>
-					<Link href='#'>
-						<li className='nav-btn'>
-							NFT{' '}
-							<span className='ml-3'>
-								<FiArrowUpRight />
-							</span>
-						</li>
-					</Link>
-					<Link href='#'>
-						<li className='nav-btn'>
-							INFO{' '}
-							<span className='ml-3'>
-								<FiArrowUpRight />
-							</span>
-						</li>
-					</Link>
-				</ul>
+			<div className='flex'>
+				<div className='pr-4'>
+					<AiOutlineShoppingCart size={'36px'} color='#FFFF3B' />
+				</div>
+				<div>
+					<GiHamburgerMenu size={'36px'} color='#FFFF3B' />
+				</div>
 			</div>
 		</div>
 	);
