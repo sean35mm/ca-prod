@@ -16,6 +16,7 @@ module.exports = {
 			fontFamily: {
 				nord: ['Nord'],
 				panther: ['Panther', 'Panther Italic', 'Panther Bold'],
+				pantherBold: ['Panther Bold', 'Panther Bold Italic'],
 				outline: [
 					'Panther Outline',
 					'Panther Outline Bold',
@@ -32,7 +33,7 @@ module.exports = {
 			laptop: '1024px',
 			// => @media (min-width: 1024px) { ... }
 
-			desktop: '1280px',
+			desktop: '1440px',
 			// => @media (min-width: 1280px) { ... }
 		},
 	},

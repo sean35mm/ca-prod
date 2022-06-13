@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @layer components {
-	.nav-btn {
-		@apply font-panther mx-2 bg-accent mt-2 text-dark;
-	}
-
 	.icon {
 		@apply mx-4;
+	}
+
+	.button {
+		@apply font-panther text-dark flex bg-yellow rounded-xl border border-black;
 	}
 }
 

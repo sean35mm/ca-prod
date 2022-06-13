@@ -18,7 +18,7 @@ const Navbar = () => {
 						alt='logo'
 						width={'203.7px'}
 						height={'102px'}
-						layout='intrinsic'
+						objectFit='contain'
 					/>
 				</a>
 			</div>

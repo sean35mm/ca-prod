@@ -8,13 +8,15 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<Meta />
-			<header>
-				<Navbar />
-			</header>
-			<main>{children}</main>
-			<footer>
-				<Footer />
-			</footer>
+			<div>
+				<header>
+					<Navbar />
+				</header>
+				<main className='h-screen bg-primary'>{children}</main>
+				<footer>
+					<Footer />
+				</footer>
+			</div>
 		</>
 	);
 };

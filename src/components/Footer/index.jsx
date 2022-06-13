@@ -9,11 +9,8 @@ import logo from '../../assets/CA-Logo.png';
 
 const Footer = () => {
 	return (
-		<div className='absolute bottom-0 bg-primary py-6 w-full'>
+		<div className='bg-primary py-6 w-full'>
 			<div className='flex justify-center items-center'>
-				<div className='tablet:mx-16 mx-4'>
-					<FiInstagram color='white' size={'38px'} />
-				</div>
 				<div className='tablet:mx-16 mx-4'>
 					<Image
 						src={logo}
@@ -22,6 +19,9 @@ const Footer = () => {
 						height={'50px'}
 						layout='intrinsic'
 					/>
+				</div>
+				<div className='tablet:mx-16 mx-4'>
+					<FiInstagram color='white' size={'38px'} />
 				</div>
 				<div className='tablet:mx-16 mx-4'>
 					<p className='text-white font-nord text-xs'>Designed By |</p>
