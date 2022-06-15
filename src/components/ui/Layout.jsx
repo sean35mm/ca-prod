@@ -6,18 +6,18 @@ import Footer from '../Footer';
 
 const Layout = ({ children }) => {
 	return (
-		<>
+		<div className='bg-primary'>
 			<Meta />
 			<div>
 				<header>
 					<Navbar />
 				</header>
-				<main className='h-screen bg-primary'>{children}</main>
+				<main>{children}</main>
 				<footer>
 					<Footer />
 				</footer>
 			</div>
-		</>
+		</div>
 	);
 };
 

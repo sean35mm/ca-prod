@@ -6,10 +6,6 @@
 	.icon {
 		@apply mx-4;
 	}
-
-	.button {
-		@apply font-panther text-dark flex bg-yellow rounded-xl border border-black;
-	}
 }
 
 @font-face {

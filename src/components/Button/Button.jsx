@@ -1,13 +1,12 @@
 import React from 'react';
-import { RiArrowRightUpLine } from 'react-icons/ri';
 
-const Button = ({ children, buttonColor }) => {
+const Button = ({ children }) => {
 	return (
-		<button type='button' className='button'>
+		<button
+			type='button'
+			className='flex py-1 px-6 bg-yellow justify-center rounded-3xl border border-black font-panther text-xl italic text-dark'
+		>
 			{children}{' '}
-			<span>
-				<RiArrowRightUpLine className='ml-3' color={buttonColor} />
-			</span>
 		</button>
 	);
 };
