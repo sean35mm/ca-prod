@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 //Icons
@@ -7,8 +7,16 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 //Assets
 import logo from '../../assets/CA-Logo.png';
+import HamburgerMenu from '../ui/HamburgerMenu';
 
 const Navbar = () => {
+	const [isOpen, setisOpen] = useState(false);
+
+	function handleMenu(e) {
+		e.preventDefault();
+		console.log('Clicked!!!');
+	}
+
 	return (
 		<div className='bg-primary flex justify-end w-screen p-6 items-center'>
 			<div className='mx-auto'>
@@ -27,7 +35,7 @@ const Navbar = () => {
 					<AiOutlineShoppingCart size={'36px'} color='#FFFF3B' />
 				</div>
 				<div>
-					<GiHamburgerMenu size={'36px'} color='#FFFF3B' />
+					<GiHamburgerMenu size={'36px'} color='#FFFF3B' onClick={handleMenu} />
 				</div>
 			</div>
 		</div>
