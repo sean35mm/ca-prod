@@ -9,6 +9,7 @@ import Layout from '../src/components/ui/Layout';
 import Hero from '../src/components/Hero/Hero';
 import Button from '../src/components/Button/Button';
 import ProductCard from '../src/components/ProductCard/ProductCard';
+import OurStory from '../src/components/OurStory/OurStory';
 
 //Icons
 import { SiInstagram, SiTiktok } from 'react-icons/si';
@@ -29,16 +30,18 @@ export default function Home() {
 				<ProductCard />
 				<ProductCard />
 				<ProductCard />
-				<ProductCard />
 			</section>
 			<div className='flex justify-center m-8'>
-				<Button>
+				<Button href={'#'}>
 					SHOP{' '}
 					<span className='ml-2 self-center'>
 						<FiArrowUpRight size={'26px'} color={'#00517D'} />
 					</span>
 				</Button>
 			</div>
+			<section className='flex justify-center'>
+				<OurStory />
+			</section>
 		</Layout>
 	);
 }

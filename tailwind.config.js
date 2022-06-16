@@ -3,6 +3,7 @@ module.exports = {
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx}',
 		'./src/components/**/*.{js,ts,jsx,tsx}',
+		'./src/components/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
 		extend: {
@@ -11,6 +12,7 @@ module.exports = {
 				secondary: '#79CEFD',
 				dark: '#00517D',
 				yellow: '#FFFF3B',
+				green: '#399458',
 				beige: '#FFF5D2',
 			},
 			fontFamily: {
@@ -25,7 +27,7 @@ module.exports = {
 			},
 		},
 		screens: {
-			mobile: '375px',
+			mobile: '325px',
 
 			tablet: '768px',
 			// => @media (min-width: 640px) { ... }
