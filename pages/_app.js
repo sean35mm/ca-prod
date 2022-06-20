@@ -1,8 +1,12 @@
 import '../styles/globals.css';
-import Layout from '../src/components/ui/Layout';
+import { SnipcartProvider } from 'use-snipcart';
 
 function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />;
+	return (
+		<SnipcartProvider>
+			<Component {...pageProps} />
+		</SnipcartProvider>
+	);
 }
 
 export default MyApp;
