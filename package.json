@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.6",
+    "@cloudinary/url-gen": "^1.8.0",
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
     "@stripe/stripe-js": "^1.32.0",

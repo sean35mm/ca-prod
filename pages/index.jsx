@@ -63,7 +63,7 @@ export async function getStaticProps() {
 					name
 					heroBackground
 				}
-				products(first: 4) {
+				products(where: { categories_some: { slug: "featured" } }) {
 					id
 					name
 					price
