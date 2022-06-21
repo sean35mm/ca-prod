@@ -6,7 +6,7 @@ import heroImage from '../../assets/Hero.png';
 
 const Hero = () => {
 	return (
-		<div className='bg-primary pb-10'>
+		<div className='bg-primary pb-5'>
 			<div className='bg-primary'>
 				<h1 className='text-yellow font-pantherBold italic text-6xl text-center laptop:text-[200px] desktop:text-[250px]  tablet:text-9xl -ml-4'>
 					WELCOME

@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-	.icon {
-		@apply mx-4;
+	.primaryBack {
+		@apply bg-primary;
+	}
+
+	.greenBack {
+		@apply bg-green;
+	}
+
+	.darkBack {
+		@apply bg-dark;
 	}
 }
 

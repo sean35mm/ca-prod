@@ -22,7 +22,7 @@ const tiktok = 'https://www.tiktok.com/@child_appetite?lang=en';
 
 export default function Home({ products }) {
 	return (
-		<Layout>
+		<Layout backgroundColor={'primaryBack'}>
 			<Hero />
 			<h1 className='text-dark font-pantherBold italic text-5xl ml-14'>
 				FEATURED
@@ -31,16 +31,16 @@ export default function Home({ products }) {
 				<ProductCard products={products} />
 			</section>
 			<div className='flex justify-center m-8'>
-				<Button href={'#'}>
+				<Button href={'/products'}>
 					SHOP{' '}
 					<span className='ml-2 self-center'>
 						<FiArrowUpRight size={'26px'} color={'#00517D'} />
 					</span>
 				</Button>
 			</div>
-			<section className='flex justify-center'>
+			<div className='flex justify-center'>
 				<OurStory />
-			</section>
+			</div>
 		</Layout>
 	);
 }

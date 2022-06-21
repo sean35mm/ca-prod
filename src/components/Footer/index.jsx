@@ -7,9 +7,9 @@ import { FiInstagram } from 'react-icons/fi';
 //Assets
 import logo from '../../assets/CA-Logo.png';
 
-const Footer = () => {
+const Footer = ({ backgroundColor }) => {
 	return (
-		<div className='bg-primary py-6 w-full mt-10'>
+		<div className={`${backgroundColor} py-6 w-full mt-10`}>
 			<div className='flex justify-center items-center'>
 				<div className='tablet:mx-16 mx-4'>
 					<Image

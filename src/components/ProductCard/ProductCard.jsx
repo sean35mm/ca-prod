@@ -15,11 +15,11 @@ const ProductCard = ({ products }) => {
 					>
 						<Link href={`/products/${product.slug}`}>
 							<a>
-								<div className='aspect-w-3 aspect-h-3 group-hover:opacity-75 sm:aspect-none sm:h-96'>
+								<div>
 									<img src={product.image.url} alt='product' />
 								</div>
 								<div className='border-b-2 border-black'>
-									<h3 className='font-panther italic text-dark text-xl flex justify-center m-2'>
+									<h3 className='font-panther italic text-dark text-xl flex mx-5 my-2'>
 										{product.name}
 									</h3>
 								</div>

@@ -2,38 +2,31 @@
 import React from 'react';
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 
+import Layout from '../../src/components/ui/Layout';
+
 const Product = ({ product }) => {
 	return (
-		<div>
+		<Layout backgroundColor={'greenBack'}>
 			<div>
-				<div>
-					<img src={product.image.url} alt='' />
-				</div>
-				<div>
-					<h1>{product.name}</h1>
-					<div
-						dangerouslySetInnerHTML={{
-							__html: product.description?.html,
-						}}
-					/>
-					<p>${product.price}</p>
-					<p>
-						<button
-							className='snipcart-add-item'
-							data-item-id={product.id}
-							data-item-price={product.price}
-							data-item-url={`/products/${product.slug}`}
-							data-item-image={product.image.url}
-							data-item-name={product.name}
-						>
-							Add to Cart
-						</button>
-					</p>
-				</div>
+				<div>IMAGE</div>
+				<div></div>
 			</div>
-		</div>
+		</Layout>
 	);
 };
+
+{
+	/* <button
+	className='snipcart-add-item'
+	data-item-id={product.id}
+	data-item-price={product.price}
+	data-item-url={`/products/${product.slug}`}
+	data-item-image={product.image.url}
+	data-item-name={product.name}
+>
+	Add to Cart
+</button>; */
+}
 
 export default Product;
 

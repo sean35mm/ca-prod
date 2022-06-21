@@ -11,7 +11,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import logo from '../../assets/CA-Logo.png';
 import HamburgerMenu from '../ui/HamburgerMenu';
 
-const Navbar = () => {
+const Navbar = ({ backgroundColor }) => {
 	const [isOpen, setisOpen] = useState(false);
 
 	const { cart = {} } = useSnipcart();
@@ -22,7 +22,9 @@ const Navbar = () => {
 	}
 
 	return (
-		<div className='bg-primary flex justify-end w-screen p-6 items-center'>
+		<div
+			className={`flex justify-end w-screen p-6 items-center ${backgroundColor}`}
+		>
 			<div className='mx-auto'>
 				<a href={'/'}>
 					<Image
@@ -35,11 +37,11 @@ const Navbar = () => {
 				</a>
 			</div>
 			<div className='flex'>
-				<div className='pr-4'>
+				<div className='pr-2'>
 					<AiOutlineShoppingCart size={'36px'} color='#FFFF3B' />
 				</div>
-				<div>
-					<button className='snipcart-checkout'>
+				<div className='pr-2 self-center'>
+					<button className='snipcart-checkout font-panther text-yellow text-2xl'>
 						<span>${cart.subtotal?.toFixed(2)}</span>
 					</button>
 				</div>

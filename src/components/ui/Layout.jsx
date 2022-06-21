@@ -4,17 +4,17 @@ import Navbar from '../Navbar';
 import Meta from './Meta';
 import Footer from '../Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, backgroundColor }) => {
 	return (
-		<div className='bg-primary'>
+		<div className={`${backgroundColor}`}>
 			<Meta />
 			<div>
 				<header>
-					<Navbar />
+					<Navbar backgroundColor={`${backgroundColor}`} />
 				</header>
 				<main>{children}</main>
 				<footer>
-					<Footer />
+					<Footer backgroundColor={`${backgroundColor}`} />
 				</footer>
 			</div>
 		</div>

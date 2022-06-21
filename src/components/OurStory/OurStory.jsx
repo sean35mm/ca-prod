@@ -4,7 +4,7 @@ import ourStoryImage from '../../assets/ourstoryimage.png';
 
 const OurStory = () => {
 	return (
-		<div className='tablet:flex border-2 border-black w-11/12 tablet:w-5/6 rounded-2xl overflow-hidden'>
+		<div className='tablet:flex border-2 border-black w-11/12 tablet:w-[97%] rounded-2xl overflow-hidden'>
 			<div className='laptop:flex mobile:p-6 bg-yellow border-b-2 tablet:border-r-2 tablet:border-b-0 border-black tablet:w-1/2'>
 				<h2 className='font-panther italic text-3xl text-green tablet:self-center tablet:mr-4 laptop:mr-8'>
 					OUR STORY
