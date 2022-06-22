@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 //Assets
-import heroImage from '../../assets/Hero.png';
+import heroImage from '../../assets/aboutImage.png';
 
 const Hero = () => {
 	return (

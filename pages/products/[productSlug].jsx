@@ -9,7 +9,11 @@ const Product = ({ product }) => {
 		<Layout backgroundColor={'greenBack'}>
 			<div>
 				<div>IMAGE</div>
-				<div></div>
+				<div>
+					<div>PRODUCT NAME</div>
+					<div>PRODUCT DESCRIPTION</div>
+					<div>ADD TO CART BUTTON</div>
+				</div>
 			</div>
 		</Layout>
 	);

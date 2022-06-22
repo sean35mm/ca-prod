@@ -13,9 +13,7 @@ import ProductCard from '../src/components/ProductCard/ProductCard';
 import OurStory from '../src/components/OurStory/OurStory';
 
 //Icons
-import { SiInstagram, SiTiktok } from 'react-icons/si';
 import { FiArrowUpRight } from 'react-icons/fi';
-import { FiInstagram } from 'react-icons/fi';
 
 const instagram = 'https://www.instagram.com/child_appetite/';
 const tiktok = 'https://www.tiktok.com/@child_appetite?lang=en';

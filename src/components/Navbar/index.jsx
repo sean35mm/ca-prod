@@ -12,31 +12,59 @@ import logo from '../../assets/CA-Logo.png';
 import HamburgerMenu from '../ui/HamburgerMenu';
 
 const Navbar = ({ backgroundColor }) => {
-	const [isOpen, setisOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
 	const { cart = {} } = useSnipcart();
 
-	function handleMenu(e) {
-		e.preventDefault();
-		console.log('Clicked!!!');
+	let menuOptions;
+
+	if (isOpen) {
+		menuOptions = (
+			<div>
+				<h1>DISPLAY MENU OVERLAY</h1>
+			</div>
+		);
 	}
 
 	return (
-		<div
-			className={`flex justify-end w-screen p-6 items-center ${backgroundColor}`}
-		>
-			<div className='mx-auto'>
+		<div className={`w-full mb-10 ${backgroundColor}`}>
+			{menuOptions}
+			<div className='absolute left-4 top-4 tablet:left-0 tablet:top-4 tablet:right-0 text-center'>
 				<a href={'/'}>
 					<Image
 						src={logo}
 						alt='logo'
-						width={'203.7px'}
-						height={'102px'}
+						width={'200px'}
+						height={'100px'}
 						objectFit='contain'
 					/>
 				</a>
 			</div>
-			<div className='flex'>
+			<div className='flex justify-end py-8 mr-4'>
+				<div className='pr-2'>
+					<AiOutlineShoppingCart size={'36px'} color='#FFFF3B' />
+				</div>
+				<div className='pr-2 self-center flex z-10'>
+					<button className='snipcart-checkout font-panther text-yellow text-2xl'>
+						<span>${cart.subtotal?.toFixed(2)}</span>
+					</button>
+				</div>
+				<div className='flex z-10'>
+					<GiHamburgerMenu
+						size={'36px'}
+						color='#FFFF3B'
+						onClick={() => setIsOpen(!isOpen)}
+					/>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default Navbar;
+
+{
+	/* <div className='flex'>
 				<div className='pr-2'>
 					<AiOutlineShoppingCart size={'36px'} color='#FFFF3B' />
 				</div>
@@ -46,11 +74,11 @@ const Navbar = ({ backgroundColor }) => {
 					</button>
 				</div>
 				<div>
-					<GiHamburgerMenu size={'36px'} color='#FFFF3B' onClick={handleMenu} />
+					<GiHamburgerMenu
+						size={'36px'}
+						color='#FFFF3B'
+						onClick={() => setIsOpen(!isOpen)}
+					/>
 				</div>
-			</div>
-		</div>
-	);
-};
-
-export default Navbar;
+			</div> */
+}

@@ -9,7 +9,7 @@ import logo from '../../assets/CA-Logo.png';
 
 const Footer = ({ backgroundColor }) => {
 	return (
-		<div className={`${backgroundColor} py-6 w-full mt-10`}>
+		<div className={`${backgroundColor} py-6 w-full pt-10`}>
 			<div className='flex justify-center items-center'>
 				<div className='tablet:mx-16 mx-4'>
 					<Image

@@ -6,13 +6,13 @@ import Footer from '../Footer';
 
 const Layout = ({ children, backgroundColor }) => {
 	return (
-		<div className={`${backgroundColor}`}>
+		<div className={`${backgroundColor} h-screen`}>
 			<Meta />
 			<div>
 				<header>
 					<Navbar backgroundColor={`${backgroundColor}`} />
 				</header>
-				<main>{children}</main>
+				<main className={`${backgroundColor}`}>{children}</main>
 				<footer>
 					<Footer backgroundColor={`${backgroundColor}`} />
 				</footer>
