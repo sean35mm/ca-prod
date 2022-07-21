@@ -5,32 +5,32 @@ import Button from '../../src/components/Button/Button';
 
 import aboutImage from '../../src/assets/aboutImage.png';
 
-import { FiArrowUpRight } from 'react-icons/fi';
+import { FiArrowUpRight, FiInstagram } from 'react-icons/fi';
 
 const About = () => {
 	return (
 		<Layout backgroundColor={'darkBack'}>
 			<div className='bg-dark flex flex-col justify-center'>
-				<h3 className='font-nord text-yellow text-2xl place-self-center my-4'>
-					STORY
+				<h3 className='font-nord text-yellow text-xl place-self-center my-4'>
+					OUR STORY
 				</h3>
-				<h1 className='place-self-center text-yellow font-pantherBold italic text-8xl my-4 tablet:text-9xl desktop:text-[200px]'>
+				<h1 className='place-self-center text-yellow font-pantherBold italic text-8xl my-3 tablet:text-9xl desktop:text-[200px]'>
 					ART FOR
 				</h1>
-				<h1 className='place-self-center text-yellow font-pantherBold italic text-8xl mb-4 tablet:text-9xl desktop:text-[200px]'>
+				<h1 className='place-self-center text-yellow font-pantherBold italic text-8xl mb-3 tablet:text-9xl desktop:text-[200px]'>
 					FUN.
 				</h1>
-				<h3 className='place-self-center text-center text-white text-2xl font-panther w-1/2 my-4'>
+				<h3 className='place-self-center text-center text-white text-xl font-nord w-1/2 my-4'>
 					Calling all lovers of sugar and spice and everything nice! Welcome to
 					the Child Appetite playground: a safe space for our bittersweet
 					thoughts. Please feel free to indulge in consuming, sharing, and
 					creating with us.
 				</h3>
-				<h3 className='place-self-center text-center text-white text-2xl font-panther w-1/2 my-4'>
+				<h3 className='flex place-self-center text-center text-white text-xl font-nord w-1/2 my-4'>
+					<span className='mr-8'>
+						<FiInstagram color='white' size={'34px'} />
+					</span>
 					Let&apos;s be friends! (@child_appetite)
-				</h3>
-				<h3 className='place-self-center text-center text-white text-2xl font-panther w-1/2 my-4'>
-					For design inquiries email: iris@childappetite.com
 				</h3>
 			</div>
 			<div className='my-10 bg-dark'>

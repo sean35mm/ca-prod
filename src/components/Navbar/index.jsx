@@ -20,8 +20,8 @@ const Navbar = ({ backgroundColor }) => {
 
 	if (isOpen) {
 		menuOptions = (
-			<div>
-				<h1>DISPLAY MENU OVERLAY</h1>
+			<div className='absolute top-28 w-full h-full bg-red-400 z-50'>
+				<div>THIS IS THE OVERLAY</div>
 			</div>
 		);
 	}
@@ -34,8 +34,8 @@ const Navbar = ({ backgroundColor }) => {
 					<Image
 						src={logo}
 						alt='logo'
-						width={'200px'}
-						height={'100px'}
+						width={'180px'}
+						height={'90px'}
 						objectFit='contain'
 					/>
 				</a>
@@ -49,7 +49,7 @@ const Navbar = ({ backgroundColor }) => {
 						<span>${cart.subtotal?.toFixed(2)}</span>
 					</button>
 				</div>
-				<div className='flex z-10'>
+				<div className='flex ml-4 z-10 cursor-pointer'>
 					<GiHamburgerMenu
 						size={'36px'}
 						color='#FFFF3B'

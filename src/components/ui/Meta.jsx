@@ -8,11 +8,11 @@ const Meta = () => {
 			<meta charSet='UTF-8' />
 			<meta
 				name='keywords'
-				content='art prints, child appetite, iris kwon, artist, bts, trippy art, stickers'
+				content='art prints, child appetite, iris kwon, artist, bts, trippy art, stickers, korean artist'
 			/>
 			<meta
 				name='description'
-				content='Trippy Art and Stationary designed by Iris Kwon'
+				content='Fun Art and Stationary designed by Iris Kwon'
 			/>
 			<meta name='author' content='Iris Kwon' />
 			<meta name='viewport' content='width=device-width, initial-scale=1.0' />
