@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { useSnipcart } from 'use-snipcart';
 
@@ -18,12 +19,21 @@ const Navbar = ({ backgroundColor }) => {
 
 	let menuOptions;
 
-	if (isOpen) {
-		menuOptions = (
-			<div className='absolute top-28 w-full h-full bg-red-400 z-50'>
-				<div>THIS IS THE OVERLAY</div>
-			</div>
-		);
+	{
+		isOpen
+			? (menuOptions = (
+					<div className='absolute top-28 w-full h-full bg-red-400 z-50'>
+						<div>
+							<ul>
+								<li>ABOUT</li>
+								<li>ABOUT</li>
+								<li>ABOUT</li>
+								<li>ABOUT</li>
+							</ul>
+						</div>
+					</div>
+			  ))
+			: null;
 	}
 
 	return (
