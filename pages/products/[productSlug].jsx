@@ -7,14 +7,17 @@ import Layout from '../../src/components/ui/Layout';
 const Product = ({ product }) => {
 	return (
 		<Layout backgroundColor={'greenBack'}>
-			<div>
-				<div>IMAGE</div>
+			<>
 				<div>
-					<div>PRODUCT NAME</div>
-					<div>PRODUCT DESCRIPTION</div>
-					<div>ADD TO CART BUTTON</div>
+					Back button
 				</div>
-			</div>
+				<div>
+					Product Section
+				</div>
+				<div>
+					Add to cart button
+				</div>
+			</>
 		</Layout>
 	);
 };
