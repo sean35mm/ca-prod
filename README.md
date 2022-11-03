@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Child Appetite LLC - (Future Build) 
 
-## Getting Started
+![Screen Shot 2022-11-02 at 8 42 15 PM](https://user-images.githubusercontent.com/77409500/199645758-86d9818a-3577-4179-aa11-20237f83f1d8.png)
+![Screen Shot 2022-11-02 at 9 08 15 PM](https://user-images.githubusercontent.com/77409500/199645831-e69f1272-7c7f-458d-9b91-e0f2d1d728e2.png)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+My wife, Iris Kwon, is an design/art director that has worked with top tech companies ie. Google, Microsoft, Salesforce, etc.. but she always felt restricted in those environments. We started her artist brand Child Appetite where she is able to use her own style and create things on her own terms. As of right now, we have a Shopify store at childappetite.com where I utilized Shopify's Liquid templating language to customize the theme. THIS repo is the making of the future website which will include a NFT Gallery and marketplace for her work.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Technology
+- React/NextJS
+- GraphCMS (now Hygraph)
+- Apollo GraphQL
+- Stripe
+- Snipcart
+- TailwindCSS
+- Cloudinary (file storage for images)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Incoming Features
+- Hardhat development environment for incoming NFT platform
+- Migration to TypeScript
+- Self hosted custom CMS
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+Fork/clone the repo then:
+`yarn install`
+Once installed:
+`yarn start`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Please note: This is a production level project with private variables that will not be shared. To request a demo, please contact the owner.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Credits
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Design: Iris Kwon (Figma files viewable upon request and approval)
+Development: Sean Gil
