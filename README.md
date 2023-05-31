@@ -1,4 +1,6 @@
-# Child Appetite LLC - (Future Build) 
+# Child Appetite LLC 
+
+# Check develop branch for current progress
 
 ![Screen Shot 2022-11-02 at 8 42 15 PM](https://user-images.githubusercontent.com/77409500/199645758-86d9818a-3577-4179-aa11-20237f83f1d8.png)
 ![Screen Shot 2022-11-02 at 9 08 15 PM](https://user-images.githubusercontent.com/77409500/199645831-e69f1272-7c7f-458d-9b91-e0f2d1d728e2.png)
